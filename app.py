@@ -4,7 +4,7 @@ from transformers import pipeline
 
 app = Flask(__name__)
 
-# Use a compact HF sentiment model (downloads on first run or can be baked into image)
+# Use a compact HF sentiment model 
 sentiment_model = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 
 @app.route('/')
